@@ -17,7 +17,6 @@ import tacos.enums.Type;
 public class Ingredient{
 	
 	@Id
-	//@GeneratedValue(strategy = GenerationType.AUTO)
 	private String id;
 	
 	private String name;
