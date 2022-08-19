@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org">
+	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Taco App</title>
@@ -9,5 +9,9 @@
 	<h1>Welcome to ...</h1>
 	<img alt="taco logo" th:src="@{images/TacoCloud.png}">
 	<a th:href="@{/design}" id="design">Design your taco</a>
+
+	<form method="POST" th:action="@{/logout}">
+		<input type="submit" value="Logout" />
+	</form>
 </body>
 </html>
